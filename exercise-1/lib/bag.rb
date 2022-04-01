@@ -20,6 +20,7 @@ class Bag
   def contains?(type)
     @candies.find do |candy|
       if candy.type == type
+        return true
       end
     end
     return false
